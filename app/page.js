@@ -1,15 +1,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Link from "next/link";
+// import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <p>Restaurannt</p>
+        <p>QR-codes for Restaurants</p>
         <div>
           <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://www.linkedin.com/in/natalia-kirejeva/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -38,32 +38,60 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-        <Link href="/pages/restaurantArgo">
+        <a
+          href="https://argo-beach.netlify.app/?zont=99"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className={styles.card}>
             <h2>
               Argo <span>-&gt;</span>
             </h2>
             <p>Argo Restaurant</p>
           </div>
-        </Link>
+        </a>
 
-        <Link href="/pages/restaurantPirates">
+        {/* <Link href="/restaurants/restaurantPirates"> */}
+        <a
+          href="https://pirates-beach.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className={styles.card}>
             <h2>
               Pirates<span>-&gt;</span>
             </h2>
             <p>Pirates Restaurant</p>
           </div>
-        </Link>
+        </a>
+        {/* </Link> */}
 
-        <Link href="/pages/restaurantArazo">
+        {/* <Link href="/restaurants/restaurantArazo"> */}
+        <a
+          href="https://arazo.netlify.app/?zont=33&r=200000000"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className={styles.card}>
             <h2>
               Arazo<span>-&gt;</span>
             </h2>
             <p>Arazo Restaurant</p>
           </div>
-        </Link>
+          {/* </Link> */}
+        </a>
+        <a
+          href="https://genesis-bar.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className={styles.card}>
+            <h2>
+              Genesis<span>-&gt;</span>
+            </h2>
+            <p>Genesis Restaurant</p>
+          </div>
+        </a>
       </div>
     </main>
   );
